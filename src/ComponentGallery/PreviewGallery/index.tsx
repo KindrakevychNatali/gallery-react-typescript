@@ -14,7 +14,7 @@ export const PreviewGallery: React.FC<PreviewGalleryProps> = ({
    indexActivePhoto,
    photos,
    className,
-   setNewPhoto
+   setNewPhoto,
 }) => {
    if (!photos.length) {
       return null;
