@@ -38,18 +38,20 @@ export const PreviewGallery: React.FC<PreviewGalleryProps> = ({
            ref={previewContainer}
       >
            {photos.map((photo, id) => (
-              <li key={photo.id}>
-               <button
-                 className={style.previewGalleryPreview}
-                 onClick={() => setNewPhoto(id)}
-              >
-                 <img
-                       src={photo.preview}
-                       alt={photo.description}
-                       className={style.previewGalleryImage}
-                 />
-                 </button>
-              </li>
+               <li key={photo.id}
+               >
+                  <button
+                     className={style.previewGalleryPreview}
+                     onClick={() => setNewPhoto(id)}
+                  >
+                     <img
+                           src={photo.preview}
+                           alt={photo.description}
+                           className={style.previewGalleryImage}
+                     />
+                  </button>
+                  
+               </li>
            ))}
       </ul> 
       ), [])}

@@ -1,7 +1,7 @@
 import { Photo } from "./types";
 import { useState } from "react";
 import { PreviewGallery } from "./PreviewGallery";
-import { MainGallery } from "./MainGallery";
+import { TransitionPhoto} from "./TransitionPhoto";
 import { Navigation } from "./Navigation";
 
 import style from './index.module.scss';
@@ -18,18 +18,16 @@ export const ComponentGallery: React.FC<ComponentGalleryProps> = ({
     }
     
     const [ indexActivePhoto, setIndexActivePhoto ] = useState(0);
-    const activePhoto = photos[indexActivePhoto];
     const prevPhoto = photos[indexActivePhoto -1];
     const nextPhoto = photos[indexActivePhoto +1];
 
     return (
         <div className={style.componentGallery}>
            <div className={style.componentGalleryContainer}>
-                <MainGallery 
-                    prevPhoto={prevPhoto}
-                    activePhoto={activePhoto}
-                    nextPhoto={nextPhoto}
-                    className={style.componentGalleryMainPhoto}
+                <TransitionPhoto
+                   photos={photos}
+                    indexActivePhoto={indexActivePhoto}
+                    className={style.transitionPhoto}
                 />
                 <Navigation 
                     className={style.componentGalleryNavigation}
