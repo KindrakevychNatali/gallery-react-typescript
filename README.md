@@ -1,27 +1,95 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Here's the `README.md` file with larger and bold headings:
 
-Currently, two official plugins are available:
+```markdown
+# **Gallery-react-typescript**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern art gallery web application built with React, TypeScript, and Vite.
 
-## Expanding the ESLint configuration
+## **Table of Contents**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [**Description**](#description)
+- [**Features**](#features)
+- [**Installation**](#installation)
+- [**Usage**](#usage)
+- [**Scripts**](#scripts)
+- [**Dependencies**](#dependencies)
+- [**DevDependencies**](#devdependencies)
+- [**License**](#license)
 
-- Configure the top-level `parserOptions` property like this:
+## **Description**
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+Art Gallery is a web application designed to showcase artworks in a clean and modern interface. Built using React and TypeScript, this project leverages Vite for fast and optimized development and build processes.
+
+## **Features**
+
+- Display a gallery of artworks
+- Responsive design
+- TypeScript for static type checking
+- Sass for styling
+
+## **Installation**
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/KindrakevychNatali/gallery-react-typescript.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd gallery-react-typescript
+    ```
+3. Install the dependencies:
+    ```sh
+    npm install
+    ```
+
+## **Usage**
+
+1. To start the development server:
+    ```sh
+    npm run dev
+    ```
+2. To build the project for production:
+    ```sh
+    npm run build
+    ```
+3. To preview the production build:
+    ```sh
+    npm run preview
+    ```
+4. To lint the code:
+    ```sh
+    npm run lint
+    ```
+
+## **Scripts**
+
+- `dev`: Start the development server using Vite.
+- `build`: Type-check the code and build the project for production.
+- `lint`: Run ESLint to check for linting errors.
+- `preview`: Preview the production build.
+
+## **Dependencies**
+
+- `classnames`: ^2.3.2
+- `react`: ^18.2.0
+- `react-dom`: ^18.2.0
+
+## **DevDependencies**
+
+- `@types/react`: ^18.2.15
+- `@types/react-dom`: ^18.2.7
+- `@typescript-eslint/eslint-plugin`: ^6.0.0
+- `@typescript-eslint/parser`: ^6.0.0
+- `@vitejs/plugin-react`: ^4.0.3
+- `eslint`: ^8.45.0
+- `eslint-plugin-react-hooks`: ^4.6.0
+- `eslint-plugin-react-refresh`: ^0.4.3
+- `sass`: ^1.68.0
+- `typescript`: ^5.0.2
+- `vite`: ^4.4.5
+
+## **License**
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
