@@ -1,6 +1,4 @@
 
-Here's the `README.md` file with larger and bold headings:
-
 ```markdown
 # **Gallery-react-typescript**
 
