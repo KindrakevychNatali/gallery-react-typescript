@@ -1,5 +1,3 @@
-
-```markdown
 # **Gallery-react-typescript**
 
 A modern art gallery web application built with React, TypeScript, and Vite.
@@ -30,7 +28,7 @@ Art Gallery is a web application designed to showcase artworks in a clean and mo
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/KindrakevychNatali/gallery-react-typescript.git
+    git clone https://github.com/KindrakevychNataly/gallery-react-typescript.git
     ```
 2. Navigate to the project directory:
     ```sh
@@ -90,4 +88,3 @@ Art Gallery is a web application designed to showcase artworks in a clean and mo
 ## **License**
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
